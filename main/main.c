@@ -21,7 +21,7 @@
 
 
 static const char *TAG = "ESP32-S3";
-static adc_channel_t channel_arr[1] = {1}
+static adc_channel_t channel_arr[1] = {1};
 
 /* Use project configuration menu (idf.py menuconfig) to choose the GPIO to blink,
    or you can edit the following line and set a number here.
@@ -197,7 +197,7 @@ void app_main(void)
 #endif
 
     while (1) {
-        
+
         ESP_LOGI(TAG, "Turning the LED %s!", s_led_state == true ? "ON" : "OFF");
         blink_led();
         /* Toggle the LED state */
